@@ -1,0 +1,69 @@
+//TODO 将使用的颜色定义为变量
+@white : #fff;
+@black : #000;
+@nice-blue : #0071c5;
+@light-blue : #005ea4;
+@lighter-blue : #0081c6;
+
+/* TODO body的定制 */
+body {
+  font-family: "SimHei", "SimSun", Arial, sans-serif;
+  color: @white;
+  padding-top: 70px;
+  background-color: #0062a8;
+}
+/* TODO 导航条的整体样式 */
+.navbar-default {
+  background-color: @nice-blue;
+  border-color: @light-blue;
+  border-bottom: 3px solid rgba(0,80,146,0.75);
+}
+/* TODO 导航条的品牌图标 */
+.navbar-brand {
+  height: 50px;
+  width: 65px;
+  margin-top: 5px;
+  margin-right: 10px;
+  background: url("../img/hdr-spr.png") no-repeat 0 -512px;
+}
+.navbar-default {
+  .navbar-toggle {
+    .icon-bar {
+      background-color: @white;
+    }
+    &:hover {
+      background-color: @light-blue;
+    }
+  }
+  .navbar-nav {
+    .active {
+      a {
+        color: @white;
+        background-color: @nice-blue;
+        &:hover {
+          color: @white;
+          background-color: @lighter-blue;
+        }
+      }
+    }
+    li {
+      a {
+        color: @white;
+        background-color: @nice-blue;
+        &:hover {
+          color: @white;
+          background-color: @lighter-blue;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  background-color: @nice-blue;
+  li {
+    a {
+      color: @white;
+    }
+  }
+}
